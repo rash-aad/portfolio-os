@@ -7,8 +7,7 @@ venv/
 *.egg-info/
 
 # ChromaDB (don't commit the local vector DB — Render rebuilds it)
-backend/chroma_db/
-
+backend/chroma_db/d1227556-11ce-40de-87df-792b91723f14
 # Environment
 .env
 *.env
