@@ -9,7 +9,7 @@ const CONFIG = {
   // PRODUCTION: https://portfolio-os-backend.onrender.com  ← change this after deploy
   BACKEND_URL: window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
     ? 'http://localhost:8000'
-    : 'https://portfolio-os-backend.onrender.com',   // ← replace with your actual Render URL
+    : 'https://portfolio-os-1.onrender.com',   // ← replace with your actual Render URL
 };
 
 window.CONFIG = CONFIG;
