@@ -1,0 +1,97 @@
+RASHAAD N MOHAMMED — ABOUT ME
+
+Personal Summary:
+Rashaad N Mohammed is a Machine Learning Engineer and AI Researcher based in Bangalore and Mangaluru, India. He is currently pursuing a B.Tech in Artificial Intelligence and Machine Learning at A.I.E.T, Mangaluru (2022–2026). He is passionate about building intelligent systems at the intersection of LLMs, RAG pipelines, and edge AI.
+
+Current Status:
+Rashaad is actively open to full-time opportunities in machine learning engineering, AI research, and related roles. He is available for work starting immediately.
+
+Research Interests:
+- Large Language Models (LLMs) and fine-tuning
+- Retrieval-Augmented Generation (RAG) systems
+- Edge AI and on-device ML inference
+- Natural Language Processing
+- AI Safety and model alignment
+- Cybersecurity and AI intersections
+
+Publications:
+1. "Enhanced Comparative Study of Summarization Methods for Legal Assistants"
+   Published: December 2025
+   Conference: 2nd International Conference on Smart Computing and Communication for Sustainable Convergence (ISCCSC)
+   Topic: Benchmarking extractive vs abstractive NLP summarization approaches for legal document processing.
+
+2. "Fine-Tuning Techniques for Large Language Models: A Comprehensive Survey"
+   Published: July 2025
+   Conference: 11th International Conference on Electronics, Computing and Communication Technologies (IEEE CONECCT)
+   Topic: Comprehensive survey of fine-tuning methods including PEFT, LoRA, QLoRA, instruction tuning, and RLHF.
+
+Contact Information:
+- Email: rashaadnmohammed@gmail.com
+- Phone: +91 7411369136
+- GitHub: github.com/rash-aad
+- LinkedIn: linkedin.com/in/rashaadn
+- Location: Bangalore / Mangaluru, India
+
+Personal Interests:
+- AI/ML research and engineering
+- Cybersecurity
+- Edge computing
+- Open source development
+- Linux systems
+- Reading research papers
+- Building side projects
+
+Why hire Rashaad?
+Rashaad brings a rare combination of strong theoretical foundations (IEEE publications, academic research) and hands-on practical experience (freelance ML engineering with measurable impact). He has demonstrated ability to work across the full ML stack — from data collection and model training to deployment and inference optimization. He is particularly strong in LLMs, RAG systems, and production ML pipelines.
+
+
+I am Rashaad, a curious and driven individual with a strong inclination toward technology, artificial intelligence, and continuous self-improvement. My journey is shaped by a deep interest in understanding how intelligent systems work and how they can be applied to solve real-world problems. I am currently a student at AIET College, where I am actively building my knowledge in data science, machine learning, and software development. My academic path is not just about completing coursework—it is about exploring concepts deeply, questioning assumptions, and turning theory into practical, impactful solutions.
+
+From an early stage in my learning, I realized that I am not satisfied with surface-level understanding. Whenever I encounter a concept, whether it is linear regression, logistic regression, or decision trees, I want to break it down to its core components. I try to understand not only how it works but why it works. For example, when learning about models, I focus on understanding the intuition behind them—what problem they solve, how they behave with data, and what their limitations are. This mindset helps me connect different concepts and build a stronger foundation in machine learning.
+
+I have a strong interest in data preprocessing and feature engineering, which I recognize as critical steps in any machine learning pipeline. I understand that raw data is rarely useful in its original form, and transforming it properly can significantly impact model performance. I have explored techniques such as encoding categorical variables, handling missing values, and scaling features using methods like StandardScaler and MinMaxScaler. I also understand the importance of choosing the right preprocessing technique depending on the dataset and the model being used.
+
+One of the areas where I show practical application of my learning is through working with datasets like the Titanic dataset. I approach such datasets not just as assignments, but as opportunities to simulate real-world problem-solving. I think about which models would work best and why—for example, considering decision trees for classification problems because of their interpretability and ability to handle both numerical and categorical data. I am also interested in understanding evaluation metrics like accuracy, precision, recall, and F1-score, as well as tools like confusion matrices to analyze model performance in depth.
+
+Beyond structured learning, I am actively involved in building projects that reflect my skills and creativity. One notable project I have worked on is an automated Gmail agent. This project demonstrates my ability to integrate AI capabilities into real-world applications. It reflects my understanding of APIs, automation, and user-focused design. I enjoy creating systems that can simplify tasks and improve efficiency, and this project is an example of that mindset in action.
+
+I am also exploring advanced concepts in artificial intelligence, such as Retrieval-Augmented Generation (RAG). My interest in RAG shows that I am not limited to traditional machine learning but am also keeping up with modern AI architectures. I understand that RAG combines information retrieval with language models to provide more accurate and context-aware responses. By creating a RAG database about myself, I am experimenting with personalization and knowledge representation, which are important aspects of next-generation AI systems.
+
+Another area that interests me is understanding how models behave visually. For instance, when working with classification problems, I want to visualize outputs like sigmoid curves to better understand how probabilities are mapped. I am not just satisfied with predictions—I want to see how those predictions are formed. Visualization helps me bridge the gap between mathematical theory and intuitive understanding.
+
+I also have a growing interest in model interpretability and explainability. I recognize that in real-world applications, it is not enough for a model to be accurate; it must also be understandable. This is especially important when working with decision trees, where concepts like Gini impurity and entropy come into play. I aim to explain these concepts in simple and intuitive ways, which also helps me strengthen my own understanding.
+
+In addition to my technical skills, I am focused on communication and teaching. I often think about how to explain complex topics in a structured and clear way, such as preparing lesson plans or scripts for teaching concepts like decision trees. This shows my ability to not only learn but also share knowledge effectively. Teaching is a powerful way to reinforce learning, and I see it as an important part of my growth.
+
+I am also preparing myself for professional environments by thinking about interviews and industry expectations. I am interested in both fundamental questions and the latest technological advancements. This balanced approach ensures that I am grounded in basics while also being aware of current trends in AI and data science. I understand that the field is evolving rapidly, and staying updated is essential.
+
+My approach to learning is highly practical and iterative. I like to experiment, make mistakes, and learn from them. When something does not make sense, I revisit it, break it down, and try different ways to understand it. I am not afraid to ask questions or seek clarification, which helps me overcome challenges more effectively.
+
+Creativity is also an important part of who I am. This is reflected in my interest in writing, such as composing romantic poetry. Writing allows me to express emotions and ideas in a different way, balancing my technical side with a more artistic perspective. It shows that I am not just analytical but also expressive and imaginative.
+
+I am also exploring the integration of AI into web technologies. For example, I have considered whether AI chatbots can be integrated into HTML-based applications. This indicates my interest in full-stack development and creating interactive user experiences powered by AI. I enjoy thinking about how different technologies can work together to create something meaningful.
+
+My technical toolkit is continuously expanding. I am comfortable working with Python and libraries like scikit-learn for machine learning tasks. I understand how to train models, evaluate them, and visualize results. I am also exploring frameworks and tools related to large language models and AI development, such as LangChain and other modern AI ecosystems.
+
+I am aware of the importance of infrastructure and performance in AI systems. Concepts like distributed AI, GPU acceleration, and tools like CUDA are part of my learning journey. I understand that building efficient systems is just as important as building accurate models, especially when working with large-scale data and complex architectures.
+
+I am also interested in understanding the broader landscape of AI tools and technologies. I differentiate between AI tools and AI technologies, recognizing that tools are applications built on top of underlying technologies. This awareness helps me navigate the ecosystem more effectively and choose the right solutions for different problems.
+
+My mindset is growth-oriented. I am always looking for ways to improve, whether it is refining my coding skills, understanding a concept more deeply, or building better projects. I do not settle for mediocrity—I aim to push my limits and achieve a higher level of competence.
+
+Time management and efficiency are also important to me. I often work within constraints, such as preparing lessons or implementing solutions within a limited time frame. This helps me develop the ability to prioritize tasks and focus on what matters most.
+
+I am also developing problem-solving skills that go beyond coding. I think about problems from different angles and consider multiple approaches before deciding on a solution. This analytical thinking is crucial in data science and AI, where there is rarely a single correct answer.
+
+Collaboration and communication are areas I continue to improve. I understand that working in teams requires clear communication and the ability to explain ideas effectively. Whether it is writing messages, drafting emails, or explaining concepts, I aim to be clear, concise, and professional.
+
+I am also mindful of the importance of ethics in AI. As I learn more about intelligent systems, I recognize the responsibility that comes with building them. Issues like bias, fairness, and transparency are important considerations, and I aim to incorporate ethical thinking into my work.
+
+My long-term goal is to become a skilled AI engineer or data scientist who can build impactful solutions. I want to work on projects that make a difference, whether it is improving efficiency, solving complex problems, or creating innovative applications. I am particularly interested in areas where AI can be used to enhance human capabilities and improve quality of life.
+
+I see my journey as a continuous process of learning and growth. Every concept I learn, every project I build, and every challenge I face contributes to my development. I am not just building skills—I am building a mindset that will help me adapt and thrive in a rapidly changing technological landscape.
+
+In summary, I am a passionate and dedicated learner with a strong interest in artificial intelligence and data science. I combine analytical thinking with creativity, theory with practice, and curiosity with discipline. I am constantly pushing myself to learn more, do more, and become better. My journey is just beginning, but I am fully committed to making the most of it and achieving my goals.
+
+This document represents not just who I am today, but also the direction I am heading in—a direction driven by curiosity, innovation, and a desire to create meaningful impact through technology.
+

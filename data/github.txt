@@ -1,0 +1,241 @@
+RASHAAD N MOHAMMED — GITHUB PROJECTS & REPOSITORIES
+
+GitHub Profile: https://github.com/rash-aad
+Total Repositories: 17
+Profile Interests: Machine learning, Python, model-based projects, collaboration
+
+===================================================================
+PROJECT 1: SOS Emergency Response System
+===================================================================
+Repository: https://github.com/rash-aad/sos
+Language: Python, HTML (72.1% HTML, 27.9% Python)
+Stars: 2
+
+Description:
+A smart safety solution where users send SOS alerts to stream live
+video from their phone and an autonomous drone to the police. Both
+feeds are saved for evidence. Built with Python and Flask for
+real-time response.
+
+Features:
+- Flask web server for backend
+- HTML templates for two user roles: Victim and Police
+- SocketIO for real-time bidirectional communication
+- Integration with OpenCV and NumPy for video/image processing
+- Real-time video streaming from phone and drone to police
+- Evidence saving functionality
+
+Tech Stack:
+- Python, Flask, SocketIO
+- OpenCV, NumPy
+- HTML/CSS (frontend templates)
+- ngrok for hosting
+
+Project Structure:
+- app.py (main Flask application)
+- templates/police.html (police dashboard)
+- templates/victim.html (victim alert interface)
+- requirements.txt
+
+Use Case: Emergency safety, elderly care, drone-assisted surveillance,
+law enforcement, public safety.
+
+===================================================================
+PROJECT 2: Movie Recommendation System
+===================================================================
+Repository: https://github.com/rash-aad/Movie-recommendation-system
+Language: Jupyter Notebook (99%), Python (1%)
+Stars: 1
+
+Description:
+A content-based movie recommendation system built using Python,
+Pandas, and Streamlit. Recommends movies based on similarity of
+content features such as genres, keywords, cast, and crew metadata.
+Powered by TMDB 5000 Movie Dataset.
+
+Features:
+- Recommends top 5 similar movies based on selected input
+- Web app built with Streamlit for intuitive UI
+- Cosine similarity on processed metadata
+- Fast and responsive with precomputed similarity matrix
+- Content-based filtering (not collaborative)
+
+How It Works:
+1. Dataset: Uses tmdb_5000_movies.csv and tmdb_5000_credits.csv
+2. Preprocessing: Cleans and combines genres, overview, cast, crew into "tags" feature
+3. Vectorization: Applies CountVectorizer for word-frequency matrix
+4. Similarity Calculation: Cosine similarity across all movie vectors
+5. Web App: Streamlit loads pre-trained pkl files for instant recommendations
+
+Tech Stack:
+- Python, Pandas, Streamlit
+- Scikit-learn (CountVectorizer, cosine similarity)
+- Jupyter Notebook for model development
+- Pickle files for model serialization (movies.pkl, similarity.pkl)
+
+Data Source: TMDB 5000 Movie Dataset (Kaggle)
+
+===================================================================
+PROJECT 3: Human Fall Detection System
+===================================================================
+Repository: https://github.com/rash-aad/human-fall-detection
+Language: Python (100%)
+Stars: 1
+
+Description:
+A fall detection system using a custom-trained YOLOv8 model. Detects
+falls in real time and sends WhatsApp alerts with location information.
+Ideal for elderly care and emergency monitoring.
+
+Features:
+- Real-time person detection using YOLOv8
+- Fall detection with time-based tracking (10 seconds threshold)
+- Automatic WhatsApp alerts via pywhatkit
+- Location fetching via IP geolocation using geocoder
+- Modular codebase with separate detection and alerting scripts
+- Custom-trained YOLOv8 model (.pt file) included
+
+Files:
+- main2.py: Main detection + alert system script
+- 10secfall.py: Monitors for fall events lasting 10 seconds
+- alert1.py: Sends WhatsApp alerts and fetches location
+- yolov8s.pt: Pre-trained YOLOv8 model
+- yolov5su.pt: Alternative YOLOv5 model
+- requirements.txt
+
+Tech Stack:
+- Python, YOLOv8 (Ultralytics)
+- OpenCV for video processing
+- pywhatkit for WhatsApp automation
+- geocoder for IP-based geolocation
+- Recommended: Linux OS
+
+Use Case: Elderly care, hospital monitoring, safety surveillance,
+emergency response systems.
+
+===================================================================
+PROJECT 4: RAG-Based QA Bot
+===================================================================
+Repository: https://github.com/rash-aad/RAG-QA-BOT
+Language: Jupyter Notebook (100%)
+Stars: 1
+
+Description:
+A Retrieval-Augmented Generation (RAG) pipeline implementation for
+a question-answering bot designed for business context queries.
+
+Features:
+- RAG pipeline for accurate, context-aware question answering
+- Hugging Face Embeddings for semantic vector representations
+- Pinecone Vector Database for scalable similarity search
+- LangChain for pipeline orchestration and chaining
+
+Files:
+- rag-qa-bot.ipynb: Main notebook with complete RAG pipeline
+- requirements.txt: All dependencies
+
+Tech Stack:
+- Python, LangChain
+- Hugging Face Transformers (embeddings)
+- Pinecone (vector database)
+- Jupyter Notebook
+
+===================================================================
+PROJECT 5: Agentic Customer Support Bot
+===================================================================
+Repository: https://github.com/rash-aad/customer_support_bot
+Language: Python (52.7%), HTML (27.1%), CSS (14.1%), Dockerfile (6.1%)
+Stars: 1
+
+Description:
+A Python-based agentic customer support bot that answers queries
+from a provided document. Features an agentic workflow that refines
+answers based on simulated user feedback.
+
+Features:
+- Document Training: Learns from any provided .txt file
+- Semantic Search: Uses sentence-transformers to find relevant sections
+- Extractive Question Answering: Uses DistilBERT model from HuggingFace
+- Agentic Feedback Loop: Simulates user feedback and auto-adjusts strategy
+- Flask API + HTML/CSS/JS frontend for interactive use
+- Docker support for containerized deployment
+- Logging: All decisions logged to support_bot_log.txt
+
+Files:
+- app.py: Flask web application entry point
+- support_bot_agent.py: Core agentic bot logic
+- data/: Knowledge base documents
+- templates/: HTML frontend
+- static/: CSS and JavaScript
+- Dockerfile: Container configuration
+- support_bot_log.txt: Decision/action logs
+
+Tech Stack:
+- Python, Flask
+- HuggingFace Transformers (DistilBERT)
+- sentence-transformers (semantic search)
+- Docker
+- HTML, CSS, JavaScript
+
+===================================================================
+PROJECT 6: Voice Assistant with LLM and RAG Pipeline
+===================================================================
+Repository: https://github.com/rash-aad/voice_assistant_llm
+Language: Python (100%)
+Stars: 1
+
+Description:
+A real-time AI voice assistant with RAG pipeline and memory built
+using Mistral LLM and Ollama. Records audio, transcribes with
+Whisper, and responds using a context-aware LLM with knowledge base.
+
+Features:
+- Real-time audio recording in chunks from microphone
+- Speech transcription using faster_whisper
+- Mistral LLM via Ollama for natural language response generation
+- RAG pipeline for knowledge base context-aware responses
+- Qdrant vector database for semantic memory storage
+- Persistent memory across conversation turns
+- Knowledge base integration for context
+
+Files:
+- app.py: Main application entry point
+- voice_service.py: Audio recording and transcription service
+- rag/: RAG pipeline implementation
+- requirements.txt
+
+Tech Stack:
+- Python
+- faster_whisper (speech-to-text)
+- Ollama + Mistral LLM (generation)
+- Qdrant (vector database)
+- pyaudio, numpy (audio processing)
+- LangChain (orchestration)
+
+===================================================================
+SUMMARY OF GITHUB SKILLS & PATTERNS
+===================================================================
+
+Rashaad's GitHub demonstrates consistent expertise in:
+
+1. RAG Systems: Multiple RAG implementations across different stacks
+   (Pinecone, Qdrant, ChromaDB, LangChain)
+
+2. Computer Vision: YOLOv8/YOLOv5 for real-time detection tasks
+
+3. NLP & LLMs: DistilBERT, Mistral, Whisper, HuggingFace Transformers
+
+4. Full-Stack ML: From Jupyter notebooks to production Flask/FastAPI apps
+   with proper frontends, Docker, and deployment configs
+
+5. Voice/Speech AI: Whisper STT, TTS, real-time audio pipelines
+
+6. Emergency/Safety AI: SOS systems, fall detection — applying AI to
+   real-world safety problems
+
+7. Agentic AI: Feedback loop bots, multi-agent architectures
+
+Languages Used Across Repos: Python (primary), HTML, CSS, JavaScript,
+Jupyter Notebook, Shell, Dockerfile
+
+GitHub Stats: 17 repositories, 12 stars total, active open source contributor

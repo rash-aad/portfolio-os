@@ -1,0 +1,99 @@
+RASHAAD N MOHAMMED — PROJECTS
+
+PROJECT 1: Context-Aware AI Bot
+Timeline: November 2025
+Type: Personal / Research Project
+
+Description:
+A modular real-time voice-interactive AI assistant built on Raspberry Pi hardware with edge-based deployment capabilities.
+
+Technical Achievements:
+- Designed a modular real-time data pipeline on Raspberry Pi achieving sub-800ms response latency for edge-based voice interactions.
+- Implemented a RAG (Retrieval-Augmented Generation) pipeline with persistent memory, improving response relevance by 25%.
+- Achieved 90% accuracy in recalling user-taught information.
+- Integrated speech-to-text (STT) and text-to-speech (TTS) components to enable natural, real-time voice interactions.
+- Optimized LLM inference through quantization and pruning, reducing model size by 60%.
+- Ensured low-latency continuous operation on hardware with less than 2GB RAM.
+- Supported 1,000+ conversational interactions per session with context retention across multi-turn dialogues.
+
+Technologies Used:
+- Python
+- Raspberry Pi
+- RAG pipeline
+- ChromaDB / vector database
+- Whisper (Speech-to-Text)
+- TTS (Text-to-Speech)
+- GGUF quantized models
+- Persistent memory systems
+- LangChain
+
+---
+
+PROJECT 2: Multi-Agent Lead Intelligence Pipeline
+Timeline: August 2025
+Type: Professional / Freelance Project
+
+Description:
+A multi-agent pipeline for automated B2B lead generation combining web scraping, company research, contact discovery, and LLM-driven personalized message generation.
+
+Technical Achievements:
+- Extracted 3–5 verified contacts per company on average.
+- Improved lead coverage by 40% compared to baseline scraping methods.
+- Architected microservice-based Python agents for company research, contact discovery, and LLM-driven message generation.
+- Used the Gemini API for language model capabilities.
+- Implemented robust data preprocessing using Pandas to handle noisy Excel inputs.
+- Ensured consistent downstream pipeline execution.
+- Engineered a domain-prioritized search algorithm that improved relevant data retrieval accuracy by 35% in SEO-heavy scenarios.
+
+Technologies Used:
+- Python
+- Gemini API (Google)
+- Pandas
+- Microservice architecture
+- Web scraping
+- Excel processing
+- LLM-driven text generation
+
+---
+
+PROJECT 3: ML Vulnerability Classifier
+Timeline: December 2025 – March 2026
+Type: Professional / Freelance
+
+Description:
+Part of the freelance ML engineering work — an end-to-end ML pipeline for classifying web vulnerabilities in automated penetration testing workflows.
+
+Technical Achievements:
+- Classified web vulnerabilities using custom-trained ML models.
+- Applied AI evaluation methodologies to measure performance improvements.
+- Improved triage efficiency by 30%.
+- Built a distributed multi-agent scanning system.
+- Fine-tuned LLMs specifically on cybersecurity/vulnerability datasets.
+- Reduced false positives by 30% through improved classification.
+- Generated structured reports with ML-based risk scoring.
+
+Technologies Used:
+- Python
+- TensorFlow
+- Docker
+- Microservices
+- LLM Fine-tuning
+- Prompt Engineering
+- FastAPI
+
+---
+
+PROJECT 4: Portfolio OS (This Website)
+Timeline: 2025 – 2026
+Type: Personal Project
+
+Description:
+A desktop-OS-style interactive portfolio with a RAG-powered terminal, draggable windows, timeline view, wallpaper switcher, and local Ollama backend. The terminal answers questions about Rashaad using RAG.
+
+Technologies Used:
+- HTML, CSS, JavaScript (frontend)
+- Python, FastAPI (backend)
+- ChromaDB (vector store)
+- Ollama (local LLM)
+- nomic-embed-text (embeddings)
+- llama3 (generation)

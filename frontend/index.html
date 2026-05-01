@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rashaad N Mohammed — Portfolio OS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&family=Syne:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/os.css" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+
+<!-- ── Wallpaper Canvases ──────────────────────────── -->
+<canvas id="star-canvas"></canvas>
+<canvas id="binary-canvas"></canvas>
+
+<!-- ── Desktop ────────────────────────────────────── -->
+<div class="desktop" id="desktop">
+
+  <!-- Open to work pill -->
+  <div class="open-to-work">
+    <div class="dot-ring">
+      <div class="dot-pulse"></div>
+      <div class="dot-core"></div>
+    </div>
+    <span>open to work</span>
+  </div>
+
+  <!-- Sticky Note -->
+  <div class="sticky-note" id="sticky-note">
+    <div class="sticky-note-title">📌 Note to Recruiter</div>
+    <div class="sticky-note-body">
+      Hey! 👋 Open the <strong>Terminal</strong> and ask me <em>anything</em> about Rashaad — my RAG assistant will answer on his behalf!<br><br>
+      Try: <strong>"What projects has he built?"</strong>
+    </div>
+  </div>
+
+  <!-- Desktop icons (left side) -->
+  <div class="icon-dock">
+    <div class="icon-item" onclick="openWindow('terminal')">
+      <div class="icon-box terminal">💻</div>
+      <div class="icon-label">terminal</div>
+    </div>
+    <div class="icon-item" onclick="openWindow('resume')">
+      <div class="icon-box resume">📄</div>
+      <div class="icon-label">resume</div>
+    </div>
+    <div class="icon-item" onclick="openWindow('projects')">
+      <div class="icon-box projects">⚡</div>
+      <div class="icon-label">projects</div>
+    </div>
+    <div class="icon-item" onclick="openWindow('timeline')">
+      <div class="icon-box timeline">🗓️</div>
+      <div class="icon-label">timeline</div>
+    </div>
+    <div class="icon-item" onclick="openWindow('blog')">
+      <div class="icon-box blog">✏️</div>
+      <div class="icon-label">blog</div>
+    </div>
+    <div class="icon-item" onclick="openWindow('gallery')">
+      <div class="icon-box gallery">🖼️</div>
+      <div class="icon-label">gallery</div>
+    </div>
+  </div>
+
+  <!-- Faint watermark -->
+  <div class="desktop-watermark">
+    <div class="watermark-name">RASHAAD N MOHAMMED</div>
+    <div class="watermark-sub">ML ENGINEER · AI RESEARCHER</div>
+  </div>
+
+  <!-- ─── TERMINAL WINDOW ──────────────────────────── -->
+  <div class="window" id="win-terminal">
+    <div class="win-titlebar" id="titlebar-terminal">
+      <div class="win-controls">
+        <div class="win-ctrl close" onclick="closeWindow('terminal')"></div>
+        <div class="win-ctrl min"   onclick="minimizeWindow('terminal')"></div>
+        <div class="win-ctrl max"></div>
+      </div>
+      <div class="win-title">terminal — ~/portfolio 🤖 RAG-powered</div>
+      <div style="width:48px"></div>
+    </div>
+    <div class="win-body" style="padding:12px 14px; display:flex; flex-direction:column;">
+      <div class="terminal-body">
+        <div class="terminal-output" id="term-output">
+          <div class="term-line info">Portfolio OS v2.0.0 — Rashaad N Mohammed</div>
+          <div class="term-line info">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</div>
+          <div class="term-line rag">🤖 RAG mode active — ask me anything about Rashaad!</div>
+          <div class="term-line info">Type <span style="color:#22c55e">help</span> for available commands, or just ask a question.</div>
+          <div class="term-line" style="margin-top:6px;"></div>
+        </div>
+        <div class="terminal-input-row">
+          <span class="terminal-prompt-label">~/portfolio $&nbsp;</span>
+          <input class="terminal-input" id="term-input" type="text" autofocus autocomplete="off" spellcheck="false" placeholder="type a command or ask anything..." />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── RESUME WINDOW ───────────────────────────── -->
+  <div class="window" id="win-resume">
+    <div class="win-titlebar" id="titlebar-resume">
+      <div class="win-controls">
+        <div class="win-ctrl close" onclick="closeWindow('resume')"></div>
+        <div class="win-ctrl min"   onclick="minimizeWindow('resume')"></div>
+        <div class="win-ctrl max"></div>
+      </div>
+      <div class="win-title">resume.pdf — Rashaad N Mohammed</div>
+      <div style="width:48px"></div>
+    </div>
+    <div class="win-body">
+      <div class="resume-body">
+        <div class="resume-name">Rashaad N Mohammed</div>
+        <div class="resume-role">ML ENGINEER · AI RESEARCHER</div>
+        <div class="resume-contact">Bangalore, India &nbsp;·&nbsp; +91 7411369136 &nbsp;·&nbsp; rashaadnmohammed@gmail.com &nbsp;·&nbsp; github.com/rash-aad</div>
+
+        <div class="resume-section">
+          <div class="resume-section-title">EXPERIENCE</div>
+          <div class="resume-item">
+            <div class="resume-item-title">Machine Learning Engineer — Startup (Freelance)</div>
+            <div class="resume-item-sub">Dec 2025 – Mar 2026 · Bangalore, Karnataka</div>
+            <ul class="resume-item-bullets">
+              <li>ML models for web vulnerability classification → 30% triage efficiency improvement</li>
+              <li>Microservice architecture for real-time multi-agent scanning → 65% faster</li>
+              <li>Fine-tuned LLMs on security datasets → 18% accuracy gain, 30% fewer false positives</li>
+              <li>End-to-end ML pipeline with Docker containerization</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="resume-section">
+          <div class="resume-section-title">EDUCATION</div>
+          <div class="resume-item">
+            <div class="resume-item-title">B.Tech — Artificial Intelligence and Machine Learning</div>
+            <div class="resume-item-sub">A.I.E.T · Mangaluru, Karnataka · Sep 2022 – Jun 2026</div>
+          </div>
+        </div>
+
+        <div class="resume-section">
+          <div class="resume-section-title">PUBLICATIONS</div>
+          <div class="resume-item">
+            <div class="resume-item-title">Enhanced Comparative Study of Summarization Methods for Legal Assistants</div>
+            <div class="resume-item-sub">ISCCSC — Dec 2025</div>
+          </div>
+          <div class="resume-item">
+            <div class="resume-item-title">Fine-Tuning Techniques for LLMs: A Comprehensive Survey</div>
+            <div class="resume-item-sub">IEEE CONECCT — Jul 2025</div>
+          </div>
+        </div>
+
+        <div class="resume-section">
+          <div class="resume-section-title">SKILLS</div>
+          <div style="margin-top:4px;">
+            <span class="resume-tag">Python</span>
+            <span class="resume-tag">TensorFlow</span>
+            <span class="resume-tag">Scikit-learn</span>
+            <span class="resume-tag">HF Transformers</span>
+            <span class="resume-tag">RAG</span>
+            <span class="resume-tag">Fine-tuning</span>
+            <span class="resume-tag">Docker</span>
+            <span class="resume-tag">AWS</span>
+            <span class="resume-tag">MongoDB</span>
+            <span class="resume-tag">Pinecone</span>
+            <span class="resume-tag">LangChain</span>
+            <span class="resume-tag">Ollama</span>
+          </div>
+        </div>
+
+        <a class="resume-dl-btn" href="../public/RASHAAD_N_MOHAMMED_Machine_Learning_Engineer.pdf" download>
+          ↓ Download PDF Resume
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── PROJECTS WINDOW ──────────────────────────── -->
+  <div class="window" id="win-projects">
+    <div class="win-titlebar" id="titlebar-projects">
+      <div class="win-controls">
+        <div class="win-ctrl close" onclick="closeWindow('projects')"></div>
+        <div class="win-ctrl min"   onclick="minimizeWindow('projects')"></div>
+        <div class="win-ctrl max"></div>
+      </div>
+      <div class="win-title">projects</div>
+      <div style="width:48px"></div>
+    </div>
+    <div class="win-body">
+      <div class="project-card">
+        <div class="project-card-header">
+          <div class="project-name">Context-Aware AI Bot</div>
+          <div class="project-links">
+            <a class="project-link" href="https://github.com/rash-aad" target="_blank">GitHub</a>
+          </div>
+        </div>
+        <div class="project-desc">Modular real-time data pipeline on Raspberry Pi with sub-800ms voice interaction latency. RAG with persistent memory, 90% recall accuracy. Quantized LLM — 60% size reduction on &lt;2GB RAM.</div>
+        <div class="project-stack">
+          <span class="stack-tag">Python</span>
+          <span class="stack-tag">RAG</span>
+          <span class="stack-tag">Raspberry Pi</span>
+          <span class="stack-tag">Whisper STT</span>
+          <span class="stack-tag">TTS</span>
+          <span class="stack-tag">Quantization</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <div class="project-name">Multi-Agent Lead Intelligence Pipeline</div>
+          <div class="project-links">
+            <a class="project-link" href="https://github.com/rash-aad" target="_blank">GitHub</a>
+          </div>
+        </div>
+        <div class="project-desc">Microservice-based Python agents for company research, contact discovery, and LLM-driven message generation. Extracted 3–5 verified contacts per company, improving lead coverage by 40%.</div>
+        <div class="project-stack">
+          <span class="stack-tag">Python</span>
+          <span class="stack-tag">Gemini API</span>
+          <span class="stack-tag">Pandas</span>
+          <span class="stack-tag">Microservices</span>
+          <span class="stack-tag">Web Scraping</span>
+        </div>
+      </div>
+
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <div class="project-name">ML Vulnerability Classifier</div>
+        </div>
+        <div class="project-desc">ML models for web vulnerability classification with AI evaluation methodologies. Part of automated pentesting workflow improving triage by 30%. Full pipeline from data collection to inference + reporting.</div>
+        <div class="project-stack">
+          <span class="stack-tag">Python</span>
+          <span class="stack-tag">TensorFlow</span>
+          <span class="stack-tag">Docker</span>
+          <span class="stack-tag">Microservices</span>
+          <span class="stack-tag">LLM Fine-tuning</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── TIMELINE WINDOW ──────────────────────────── -->
+  <div class="window" id="win-timeline">
+    <div class="win-titlebar" id="titlebar-timeline">
+      <div class="win-controls">
+        <div class="win-ctrl close" onclick="closeWindow('timeline')"></div>
+        <div class="win-ctrl min"   onclick="minimizeWindow('timeline')"></div>
+        <div class="win-ctrl max"></div>
+      </div>
+      <div class="win-title">timeline — my journey</div>
+      <div style="width:48px"></div>
+    </div>
+    <div class="win-body">
+      <!-- Filter buttons -->
+      <div class="timeline-filter">
+        <button class="tl-btn all active"          data-filter="all">All</button>
+        <button class="tl-btn education"           data-filter="education">🎓 Education</button>
+        <button class="tl-btn work"                data-filter="work">💼 Work</button>
+        <button class="tl-btn project"             data-filter="project">⚡ Projects</button>
+        <button class="tl-btn publication"         data-filter="publication">📝 Publications</button>
+      </div>
+      <!-- Timeline -->
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+        <div id="timeline-items"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── BLOG WINDOW ─────────────────────────────── -->
+  <div class="window" id="win-blog">
+    <div class="win-titlebar" id="titlebar-blog">
+      <div class="win-controls">
+        <div class="win-ctrl close" onclick="closeWindow('blog')"></div>
+        <div class="win-ctrl min"   onclick="minimizeWindow('blog')"></div>
+        <div class="win-ctrl max"></div>
+      </div>
+      <div class="win-title">blog — writings</div>
+      <div style="width:48px"></div>
+    </div>
+    <div class="win-body" id="blog-body"></div>
+  </div>
+
+  <!-- ─── GALLERY WINDOW ───────────────────────────── -->
+  <div class="window" id="win-gallery">
+    <div class="win-titlebar" id="titlebar-gallery">
+      <div class="win-controls">
+        <div class="win-ctrl close" onclick="closeWindow('gallery')"></div>
+        <div class="win-ctrl min"   onclick="minimizeWindow('gallery')"></div>
+        <div class="win-ctrl max"></div>
+      </div>
+      <div class="win-title">what I love</div>
+      <div style="width:48px"></div>
+    </div>
+    <div class="win-body" id="gallery-body"></div>
+  </div>
+
+  <!-- Taskbar -->
+  <div class="taskbar">
+    <div class="win-btn" title="Menu" onclick="showToast('🪟 Portfolio OS v2.0')">
+      <div></div><div></div><div></div><div></div>
+    </div>
+
+    <div class="taskbar-center" id="taskbar-center">
+      <div class="taskbar-pill" id="pill-terminal"  onclick="openWindow('terminal')">terminal</div>
+      <div class="taskbar-pill" id="pill-resume"    onclick="openWindow('resume')">resume</div>
+      <div class="taskbar-pill" id="pill-projects"  onclick="openWindow('projects')">projects</div>
+      <div class="taskbar-pill" id="pill-timeline"  onclick="openWindow('timeline')">timeline</div>
+      <div class="taskbar-pill" id="pill-blog"      onclick="openWindow('blog')">blog</div>
+      <div class="taskbar-pill" id="pill-gallery"   onclick="openWindow('gallery')">gallery</div>
+    </div>
+
+    <div style="display:flex; align-items:center; gap:10px;">
+      <div class="wallpaper-btn" id="wp-btn" onclick="cycleWallpaper()" title="Switch wallpaper">
+        🌌 Wallpaper
+      </div>
+      <div class="datetime">
+        <div class="dt-time" id="dt-time">--:-- --</div>
+        <div class="dt-date" id="dt-date">--- --, ----</div>
+      </div>
+    </div>
+  </div>
+</div><!-- /desktop -->
+
+<!-- Context menu -->
+<div class="context-menu" id="context-menu">
+  <div class="ctx-item" onclick="openWindow('terminal')">💻 Open Terminal</div>
+  <div class="ctx-item" onclick="openWindow('resume')">📄 View Resume</div>
+  <div class="ctx-item" onclick="openWindow('timeline')">🗓️ View Timeline</div>
+  <div class="ctx-item" onclick="openWindow('projects')">⚡ View Projects</div>
+  <div class="ctx-divider"></div>
+  <div class="ctx-item" onclick="cycleWallpaper()">🌌 Switch Wallpaper</div>
+  <div class="ctx-item" onclick="showToast('🔄 Refreshing desktop...')">🔄 Refresh</div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<!-- Scripts -->
+<script src="js/app.js"></script>
+<script src="js/wallpaper.js"></script>
+<script src="js/os.js"></script>
+<script src="js/terminal.js"></script>
+<script src="js/timeline.js"></script>
+<script src="js/blog.js"></script>
+<script src="js/gallery.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+RASHAAD N MOHAMMED — RESUME
+
+CONTACT
+Name: Rashaad N Mohammed
+Location: Bangalore, India
+Phone: +91 7411369136
+Email: rashaadnmohammed@gmail.com
+LinkedIn: linkedin.com/in/rashaadn
+GitHub: github.com/rash-aad
+
+EDUCATION
+Degree: Bachelor of Technology, Artificial Intelligence and Machine Learning
+Institution: A.I.E.T (Alva's Institute of Engineering and Technology)
+Location: Mangaluru, Karnataka
+Duration: September 2022 – June 2026
+
+WORK EXPERIENCE
+Title: Machine Learning Engineer
+Type: Startup, Freelance
+Duration: December 2025 – March 2026
+Location: Bangalore, Karnataka
+
+Responsibilities and Achievements:
+- Designed and trained ML models to classify web vulnerabilities, applying AI evaluation methodologies and algorithm design principles.
+- Improved triage efficiency by 30% in automated pentesting workflows.
+- Engineered microservice architecture for real-time data pipelines in a distributed multi-agent system.
+- Enabled scanning multiple endpoints in parallel, reducing total analysis time by 65% compared to sequential scanning.
+- Fine-tuned LLMs on security datasets using prompt engineering techniques.
+- Achieved an 18% improvement in vulnerability classification accuracy.
+- Reduced false positives by 30%.
+- Generated structured penetration testing reports with ML-based risk scoring and remediation recommendations.
+- Integrated AI safety protocols to ensure model alignment and reliability.
+- Built end-to-end ML pipeline covering data collection, feature extraction, training, inference, and reporting.
+- Containerized components with Docker for consistent deployments.
+
+TECHNICAL SKILLS
+Programming Languages: Python (primary), C, Shell
+
+Machine Learning and AI:
+- TensorFlow
+- Scikit-learn
+- OpenCV
+- Hugging Face Transformers
+- AI Evaluation methodologies
+- Algorithm Design
+
+LLMs and NLP:
+- Fine-tuning large language models
+- Retrieval-Augmented Generation (RAG)
+- Prompt Engineering
+- LangChain
+- Ollama
+
+Data and Systems:
+- MongoDB
+- SQL
+- Pinecone (Vector Database)
+- ChromaDB (Vector Database)
+- API Design
+- Real-time Data Pipelines
+
+Tools and Infrastructure:
+- Docker
+- Git
+- Linux
+- AWS (EC2, S3, Lambda)
+- Microservice Architectures
+- FastAPI
