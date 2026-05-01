@@ -100,7 +100,7 @@ const commands = {
 async function queryRAG(question) {
   appendTermLine('thinking', '⟳ Consulting RAG assistant...');
   try {
-    const resp = await fetch(CONFIG.BACKEND_URL + '/rag/query', {
+    const resp = await fetch('http://localhost:8000/rag/query', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ question })
@@ -123,7 +123,7 @@ async function queryRAG(question) {
     const lines = termOutput.querySelectorAll('.term-line.thinking');
     lines.forEach(l => l.remove());
     appendTermLine('error', '✗ RAG backend not reachable. Start the backend first:');
-    appendTermLine('error', '  Check backend is deployed on Render.');
+    appendTermLine('error', '  cd backend && uvicorn main:app --reload');
     appendTermLine('info',  '  (or check README.md for setup instructions)');
   }
 }
