@@ -1,12 +1,6 @@
 """
 Portfolio OS — backend/rag/engine.py
-
-RAG engine using:
-  - ChromaDB              (vector store — persistent on Render disk / local)
-  - Sentence Transformers (embeddings — runs locally, no API needed)
-  - Groq API              (LLM — llama3, free, fast)
-
-On first run it ingests all .txt files from data/
+RAG engine using ChromaDB + Sentence Transformers + Groq
 """
 import os
 from pathlib import Path
@@ -18,15 +12,15 @@ from groq import Groq
 # ── Config ──────────────────────────────────────────────
 DATA_DIR        = Path(__file__).parent.parent.parent / "data"
 CHROMA_PATH     = Path(os.getenv("CHROMA_PATH", str(Path(__file__).parent.parent / "chroma_db")))
-COLLECTION_NAME = "portfolio_rag"
+COLLECTION_NAME = "portfolio_rag_v2"   # ← renamed to force fresh collection
 GROQ_API_KEY    = os.getenv("GROQ_API_KEY", "")
-CHAT_MODEL      = os.getenv("CHAT_MODEL", "llama3-8b-8192")   # or llama3-70b-8192
+CHAT_MODEL      = os.getenv("CHAT_MODEL", "llama3-8b-8192")
 CHUNK_SIZE      = 500
 CHUNK_OVERLAP   = 80
-TOP_K           = 3    # 3 is enough and faster than 4
+TOP_K           = 3
 
 # ── Groq client ──────────────────────────────────────────
-_groq: Groq | None = None
+_groq = None
 
 def get_groq():
     global _groq
@@ -36,8 +30,7 @@ def get_groq():
         _groq = Groq(api_key=GROQ_API_KEY)
     return _groq
 
-# ── ChromaDB — use sentence-transformers for embeddings ──
-# (no external API needed, runs on CPU fine)
+# ── ChromaDB ──────────────────────────────────────────────
 _client     = None
 _collection = None
 
@@ -48,7 +41,7 @@ def get_collection():
     CHROMA_PATH.mkdir(parents=True, exist_ok=True)
     _client = chromadb.PersistentClient(path=str(CHROMA_PATH))
     embedder = embedding_functions.SentenceTransformerEmbeddingFunction(
-        model_name="all-MiniLM-L6-v2"   # tiny, fast, good quality
+        model_name="all-MiniLM-L6-v2"
     )
     _collection = _client.get_or_create_collection(
         name=COLLECTION_NAME,
@@ -106,7 +99,7 @@ def query_rag(question: str) -> dict:
 
     if not docs:
         return {
-            "answer": "I don't have that documented here yet, but feel free to reach out at rashaadnmohammed@gmail.com!",
+            "answer": "I don't have that documented here yet, feel free to reach out at rashaadnmohammed@gmail.com!",
             "sources": [],
         }
 
