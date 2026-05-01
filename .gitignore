@@ -27,3 +27,10 @@ Thumbs.db
 __pycache__/
 *.pyc
 .venv/
+.venv/
+backend/chroma_db/
+backend/__pycache__/
+backend/rag/__pycache__/
+backend/routes/__pycache__/
+*.pyc
+*.pyo
