@@ -34,3 +34,8 @@ backend/rag/__pycache__/
 backend/routes/__pycache__/
 *.pyc
 *.pyo
+
+__pycache__/
+*.pyc
+venv/
+.env
