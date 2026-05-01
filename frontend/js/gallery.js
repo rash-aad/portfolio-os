@@ -3,7 +3,7 @@
    Dynamic gallery: category grid → polaroid photo viewer
 ═══════════════════════════════════════════════════════ */
 
-const GALLERY_API = CONFIG.BACKEND_URL + '/gallery';
+const GALLERY_API = 'http://localhost:8000/gallery';
 
 // ── State ────────────────────────────────────────────────
 let allCategories   = [];

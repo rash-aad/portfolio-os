@@ -4,7 +4,7 @@
    Renders list view + in-window post reader
 ═══════════════════════════════════════════════════════ */
 
-const BLOG_API = CONFIG.BACKEND_URL + '/blogs';
+const BLOG_API = 'http://localhost:8000/blogs';
 
 // ── State ────────────────────────────────────────────────
 let allPosts   = [];
