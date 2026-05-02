@@ -3,7 +3,7 @@
    Dynamic gallery: category grid → polaroid photo viewer
 ═══════════════════════════════════════════════════════ */
 
-const GALLERY_API = 'https://farmers-special-environments-imperial.trycloudflare.com/gallery';
+const GALLERY_API = 'https://deeper-lying-comp-cruise.trycloudflare.com/gallery';
 
 // ── State ────────────────────────────────────────────────
 let allCategories   = [];
