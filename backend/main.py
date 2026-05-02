@@ -24,7 +24,7 @@ async def add_cors_headers(request: Request, call_next):
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://rashaads-portfolio.netlify.app"],
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
