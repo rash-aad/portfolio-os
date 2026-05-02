@@ -4,7 +4,7 @@
    Renders list view + in-window post reader
 ═══════════════════════════════════════════════════════ */
 
-const BLOG_API = 'https://f535-2405-201-d021-1815-1a03-73ff-fe81-c14b.ngrok-free.app/blogs';
+const BLOG_API = 'https://8232-2405-201-d021-1815-1a03-73ff-fe8-c14b.ngrok-free.app/blogs';
 
 // ── State ────────────────────────────────────────────────
 let allPosts   = [];
