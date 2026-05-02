@@ -102,7 +102,10 @@ async function queryRAG(question) {
   try {
     const resp = await fetch('https://7330-2405-201-d021-1815-1a03-73ff-fe81-c14b.ngrok-free.app/rag/query', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 
+        'Content-Type': 'application/json',
+        'ngrok-skip-browser-warning': 'true'
+      },
       body: JSON.stringify({ question })
     });
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);

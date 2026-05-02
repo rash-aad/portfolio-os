@@ -21,7 +21,9 @@ async function loadGalleryCategories() {
   body.innerHTML = '<div class="gallery-loading">⟳ Loading...</div>';
 
   try {
-    const resp = await fetch(GALLERY_API + '/');
+    const resp = await fetch(GALLERY_API + '/', {
+  headers: {'ngrok-skip-browser-warning': 'true'}
+});
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     allCategories = await resp.json();
     renderCategoryGrid(allCategories);

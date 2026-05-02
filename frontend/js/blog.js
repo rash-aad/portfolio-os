@@ -24,7 +24,9 @@ async function loadBlogList() {
   </div>`;
 
   try {
-    const resp = await fetch(BLOG_API + '/');
+    const resp = await fetch(BLOG_API + '/', {
+  headers: {'ngrok-skip-browser-warning': 'true'}
+});
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     allPosts = await resp.json();
     renderBlogList(allPosts);
