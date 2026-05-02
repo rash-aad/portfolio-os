@@ -4,7 +4,7 @@
    Renders list view + in-window post reader
 ═══════════════════════════════════════════════════════ */
 
-const BLOG_API = 'https://deeper-lying-comp-cruise.trycloudflare.com/blogs';
+const BLOG_API = 'https://suites-crop-kits-breath.trycloudflare.com/blogs';
 
 // ── State ────────────────────────────────────────────────
 let allPosts   = [];
