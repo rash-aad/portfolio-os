@@ -84,7 +84,7 @@ async def list_categories():
     return categories
 
 
-@router.get("/{category}/{filename}")
+@router.get("/{category}/{filename:path}")
 async def serve_image(category: str, filename: str):
     """Serve the actual image file."""
     category = _safe_slug(category)
