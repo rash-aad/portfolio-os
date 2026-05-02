@@ -84,17 +84,6 @@ async def list_categories():
     return categories
 
 
-@router.get("/{category}/{filename:path}")
-async def serve_image(category: str, filename: str):
-    """Serve the actual image file."""
-    category = _safe_slug(category)
-    # Remove this sanitization line — FastAPI already handles it
-    path     = GALLERY_DIR / category / filename
-    if not path.exists() or not _is_image(path):
-        raise HTTPException(status_code=404, detail="Image not found.")
-    return FileResponse(path)
-
-
 @router.get("/{category}", response_model=list[GalleryImage])
 async def list_images(category: str):
     """Return all images inside a category folder."""
@@ -112,5 +101,13 @@ async def list_images(category: str):
             ))
     return images
 
+@router.get("/{category}/{filename}")
+async def serve_image(category: str, filename: str):
+    """Serve the actual image file - must be AFTER list_images route."""
+    category = _safe_slug(category)
+    path     = GALLERY_DIR / category / filename
+    if not path.exists() or not _is_image(path):
+        raise HTTPException(status_code=404, detail="Image not found.")
+    return FileResponse(path)
 
 
