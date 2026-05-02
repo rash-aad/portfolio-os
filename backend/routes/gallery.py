@@ -88,7 +88,7 @@ async def list_categories():
 async def serve_image(category: str, filename: str):
     """Serve the actual image file."""
     category = _safe_slug(category)
-    filename = re.sub(r"[^a-zA-Z0-9_\-\.]", "", filename)
+    # Remove this sanitization line — FastAPI already handles it
     path     = GALLERY_DIR / category / filename
     if not path.exists() or not _is_image(path):
         raise HTTPException(status_code=404, detail="Image not found.")
