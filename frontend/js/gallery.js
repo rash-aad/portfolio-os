@@ -62,7 +62,9 @@ async function openGalleryCategory(slug) {
   body.innerHTML = '<div class="gallery-loading">⟳ Loading photos...</div>';
 
   try {
-    const resp = await fetch(GALLERY_API + '/' + slug);
+    const resp = await fetch(GALLERY_API + '/', {
+  headers: {'ngrok-skip-browser-warning': 'true'}
+});
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     const images = await resp.json();
     const cat    = allCategories.find(function(c) { return c.slug === slug; }) || { label: slug, icon: '📁' };
