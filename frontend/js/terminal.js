@@ -100,7 +100,7 @@ const commands = {
 async function queryRAG(question) {
   appendTermLine('thinking', '⟳ Consulting RAG assistant...');
   try {
-    const resp = await fetch('http://localhost:8000/rag/query', {
+    const resp = await fetch('https://farmers-special-environments-imperial.trycloudflare.com/rag/query', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ question })
