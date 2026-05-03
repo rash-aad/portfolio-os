@@ -22,7 +22,7 @@ CHROMA_PATH    = Path(__file__).parent.parent / "chroma_db"
 COLLECTION_NAME = "portfolio_rag"
 OLLAMA_BASE    = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 EMBED_MODEL    = os.getenv("EMBED_MODEL",  "nomic-embed-text")
-CHAT_MODEL     = os.getenv("CHAT_MODEL",   "qwen:0.5b")
+CHAT_MODEL     = os.getenv("CHAT_MODEL",   "tinyllama:latest")
 CHUNK_SIZE     = 500   # characters
 CHUNK_OVERLAP  = 80
 TOP_K          = 4
@@ -156,7 +156,7 @@ Answer:"""
 
     # Call Ollama chat API
     payload = {
-        "model": CHAT_MODEL,
+        "model": CHAT_MODEL     = os.getenv("CHAT_MODEL",   "tinyllama:latest")
         "messages": [
             {"role": "system", "content": system_prompt},
             {"role": "user",   "content": user_prompt},
