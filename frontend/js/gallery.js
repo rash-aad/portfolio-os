@@ -81,7 +81,7 @@ async function renderPolaroids(images, cat) {
       var rot = rots[i % rots.length];
       return '<div class="polaroid" style="--rot:' + rot + 'deg" id="polaroid-' + i + '" onclick="openLightbox(\'' + GALLERY_API + '/image/' + currentCategory + '/' + img.filename + '\',\'' + img.caption.replace(/'/g, "\\'") + '\')">' +
         '<div class="polaroid-img-wrap">' +
-          '<img id="img-' + i + '" src="" alt="' + img.caption + '" onerror="this.parentElement.innerHTML=\'<div class=polaroid-broken>🖼️</div>\'" />' +
+          '<img id="img-' + i + '" src="" style="width:100%;height:100%;object-fit:cover;" alt="' + img.caption + '" onerror="this.parentElement.innerHTML=\'<div class=polaroid-broken>🖼️</div>\'" />' +
         '</div>' +
         '<div class="polaroid-caption">' + img.caption + '</div>' +
       '</div>';
