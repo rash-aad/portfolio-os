@@ -3,7 +3,7 @@
    Dynamic gallery: category grid → polaroid photo viewer
 ═══════════════════════════════════════════════════════ */
 
-const GALLERY_API = 'https://7330-2405-201-d021-1815-1a03-73ff-fe81-c14b.ngrok-free.app/gallery';
+const GALLERY_API = 'https://db82-2405-201-d021-1815-1a03-73ff-fe81-c14b.ngrok-free.app/gallery';
 
 // ── State ────────────────────────────────────────────────
 let allCategories   = [];
@@ -93,7 +93,7 @@ function renderPolaroids(images, cat) {
   body.innerHTML = backBtn + '<div class="polaroid-grid">' +
     images.map(function(img, i) {
       var rot = rots[i % rots.length];
-      var src = 'https://7330-2405-201-d021-1815-1a03-73ff-fe81-c14b.ngrok-free.app/gallery/' + currentCategory + '/' + img.filename;
+      var src = 'https://db82-2405-201-d021-1815-1a03-73ff-fe81-c14b.ngrok-free.app/gallery/' + currentCategory + '/' + img.filename;
       return '<div class="polaroid" style="--rot:' + rot + 'deg" onclick="openLightbox(\'' + src + '\',\'' + img.caption.replace(/'/g, "\\'") + '\')">' +
         '<div class="polaroid-img-wrap">' +
           '<img src="' + src + '" alt="' + img.caption + '" loading="lazy" onerror="this.parentElement.innerHTML=\'<div class=polaroid-broken>🖼️</div>\'" />' +
