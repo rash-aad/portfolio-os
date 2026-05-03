@@ -75,7 +75,9 @@ async function openBlogPost(slug) {
   </div>`;
 
   try {
-    const resp = await fetch(`${BLOG_API}/${slug}`);
+    const resp = await fetch(`${BLOG_API}/${slug}`, {
+  headers: {'ngrok-skip-browser-warning': 'true'}
+});
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     const post = await resp.json();
     viewingPost = post;
