@@ -94,7 +94,7 @@ function renderPolaroids(images, cat) {
     images.map(function(img, i) {
       var src = 'https://db82-2405-201-d021-1815-1a03-73ff-fe81-c14b.ngrok-free.app/gallery/image/' + currentCategory + '/' + img.filename;
 var fetchSrc = src;
-return '<div class="polaroid" style="--rot:' + rot + 'deg" onclick="openLightbox(\'' + fetchSrc + '\',\'' + img.caption.replace(/\'/g, "\\'") + '\')">' +
+return '<div class="polaroid" style="--rot:' + rots[i % rots.length] + 'deg" onclick="openLightbox(\'' + fetchSrc + '\',\'' + img.caption.replace(/\'/g, "\\'") + '\')">' +
   '<div class="polaroid-img-wrap">' +
     '<img src="' + src + '" alt="' + img.caption + '" loading="lazy" crossorigin="anonymous" referrerpolicy="no-referrer-when-downgrade" onerror="this.parentElement.innerHTML=\'<div class=polaroid-broken>🖼️</div>\'" />' +
   '</div>' +
